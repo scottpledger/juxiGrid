@@ -1,0 +1,54 @@
+<html>
+<head>
+	<link rel="stylesheet" href="../../css/cupertino/jquery-ui-1.8.16.custom.css" />
+	<link rel="stylesheet" href="../../css/juxigrid/juxigrid.css" />
+	<script src="../jquery-1.6.2.js"></script>
+	<script src="../jquery-ui-1.8.16.custom.min.js"></script>
+	<script src="./juxigrid.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var grid = $('#juxigrid');
+			grid.juxigrid({
+				url: 'http://example.net/testme',
+				//dataType: 'json',
+				colModel : [
+					{display: 'Field Display Name', name: 'fieldname', sortable: true, align: 'left', hide: false}
+				],
+				searchitems : [
+					{display: 'Order Number', name: 'orderno', isdefault:true}
+				],
+				buttons : [
+					{name: 'Action 1', onpress : function(){}, options:{icons:{primary:"ui-icon-script"}}},
+					{name: 'Action 2', onpress : function(){}, options:{icons:{primary:"ui-icon-mail-closed"}}},
+					{name: 'Action 3', onpress : function(){}, options:{icons:{primary:"ui-icon-bookmark"}}},
+					{name: 'Action 4', onpress : function(){}, options:{icons:{primary:"ui-icon-print"}}},
+					{name: 'Action 5', onpress : function(){}, options:{icons:{primary:"ui-icon-circle-close"}}}
+				],
+				autoExpand:true,
+				sortname: "fieldname",
+				sortorder: "asc",
+				usepager: true,
+				useRp: true,
+				rp: 10,
+				singleSelect:true
+			});
+			$('#my_refresh').click(function(){
+				console.log(grid.juxigrid('getSelected'));
+				console.log(grid.juxigrid)
+			});
+		});
+	</script>
+</head>
+<body>
+	<table id="juxigrid">
+		<thead>
+		<tr><th>Test Col 1</th><th>Test Col 2</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>Test Data 1A</td><td>Test Data 1B</td></tr>
+			<tr><td>Test Data 2A</td><td>Test Data 2B</td></tr>
+		</tbody>
+	</table>
+	<button id="my_refresh">CUSTOM REFRESH</button>
+</body>
+</html>

@@ -1,0 +1,78 @@
+.ui-juxigrid {
+	padding:7px;
+}
+
+.ui-juxigrid table {
+	border-collapse:collapse;
+	border:0px;
+	margin:0px;
+	padding:0px;
+}
+
+.ui-juxigrid .ui-icon-none {
+background-position: -240px 0;
+}
+
+.ui-juxigrid .v_separator {
+	height: 22px;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid white;
+	margin: .1em;
+}
+
+.ui-juxigrid .tiDiv {
+	padding:.4em 1em;
+	margin:0px;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.ui-juxigrid .toDiv {
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.ui-juxigrid .taDiv {
+	overflow:auto;
+}
+
+.ui-juxigrid .boDiv {
+	overflow:hidden;
+	white-space:nowrap;
+	padding:.3em .4em;
+}
+
+.ui-juxigrid .taDiv tr , .ui-juxigrid .taDiv thead th, .ui-juxigrid .taDiv tbody td {
+	padding:0px;
+	margin:0px;
+}
+
+.ui-juxigrid .taDiv tbody td {
+	border:1px solid #CCC;
+	font-style:normal;
+	font-weight:normal;
+}
+
+.ui-juxigrid .taDiv th div.ui-button {
+	float:left;
+	margin:0px;
+	overflow:hidden;
+	width:100%;
+}
+
+.ui-juxigrid .taDiv tbody td {
+	cursor:default;
+	overflow:hidden;
+}
+
+.ui-juxigrid .taDiv td, .ui-juxigrid .taDiv th {
+	white-space:nowrap;
+	padding:0px;
+}
+
+.ui-juxigrid p {
+	display:inline;
+}
+
+
+
